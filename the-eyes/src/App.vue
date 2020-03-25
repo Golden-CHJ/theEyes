@@ -1,17 +1,25 @@
 <template>
   <div id="app">
+    <el-container>
+  <el-header>垃圾在线识别</el-header>
+  <el-main>
     <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <index></index>
+    </el-main>
+  <el-footer>Footer</el-footer>
+</el-container>
+    
+    
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import index from './components/index.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    index
   }
 }
 </script>
