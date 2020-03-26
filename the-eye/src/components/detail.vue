@@ -44,8 +44,8 @@ export default {
     }
   },
   mounted () {
-    axios.get('static/mock/data.json').then((res) => {
-      // console.log(res)
+    axios.get('http://localhost:3000/data').then((res) => {
+      console.log(res)
       let data = res.data
       this.classification = data.classification
       this.news = data.news
