@@ -1,10 +1,17 @@
 <template>
   <div>
+    <el-container>
+  <el-header>垃圾在线识别</el-header>
+  <el-main>
+    <img alt="Vue logo" src="../assets/logo.png">
     <el-upload
   class="upload-demo"
   action="https://jsonplaceholder.typicode.com/posts/"
   :on-preview="handlePreview"
   :on-remove="handleRemove"
+  :on-success="handleFileSuccess"
+  :on-error="handleFileError"
+  :on-progress="handleFileProgress"
   :file-list="fileList"
   :auto-upload ="autoUpload"
   list-type="picture"
@@ -12,20 +19,20 @@
   <el-button size="small" type="primary">点击上传</el-button>
   <div slot="tip" class="el-upload__tip">只能上传jpg/png文件，且不超过500kb</div>
 </el-upload>
+   
+    </el-main>
+  <el-footer>Footer</el-footer>
+</el-container>
   </div>
 </template>
 
 <script>
+
 export default {
   name: 'index',
   data(){
      return {
-        fileList: [
-          {
-           name: 'food.jpeg',
-           url: 'https://fuss10.elemecdn.com/3/63/4e7f3a15429bfda99bce42a18cdd1jpeg.jpeg?imageMogr2/thumbnail/360x360/format/webp/quality/100'
-           },
-          ],
+        fileList:[],
         autoUpload : true,
         accept:"jpg"||"JPG"||'png'||'PNG'
         };
@@ -37,7 +44,21 @@ export default {
       handlePreview(file) {
         console.log(file);
         console.log("HANDLEpREVIEW");
-      }
+      },
+      handleFileSuccess(response, file, fileList){
+        console.log("success")
+        console.log(response,file,fileList)
+        this.$router.push({path:'/detail'})
+        alert("跳转啊")
+      },
+      handleFileError(err,file,fileList){  
+        console.log("err")
+        console.log(err,file,fileList)
+        },
+      handleFileProgress(event, file, fileList){
+          console.log("event")
+        console.log(event,file,fileList)
+    }
     }
   
 }
