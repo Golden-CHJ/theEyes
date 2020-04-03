@@ -1,10 +1,11 @@
+
 import * as tf from '@tensorflow/tfjs';
 import { img2x, file2img } from './utils';
 
 const MODEL_PATH = 'http://127.0.0.1:8080';
 const BRAND_CLASSES = ['O', 'R'];
 
-window.onload = async () => {
+async (function ()  {
     const mobilenet = await tf.loadLayersModel(MODEL_PATH + '/mobilenet/web_model/model.json');
     mobilenet.summary();
     const layer = mobilenet.getLayer('conv_pw_13_relu');
@@ -34,4 +35,4 @@ window.onload = async () => {
             alert(`预测结果：${BRAND_CLASSES[index]}`);
         }, 0);
     };
-};
+})()

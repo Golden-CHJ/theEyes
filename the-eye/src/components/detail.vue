@@ -44,7 +44,7 @@ export default {
     }
   },
   mounted () {
-    axios.get('http://localhost:3000/data').then((res) => {
+    axios.post('http://localhost:3000/detail').then((res) => {
       console.log(res)
       let data = res.data
       this.classification = data.classification

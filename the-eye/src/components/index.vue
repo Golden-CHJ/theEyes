@@ -6,7 +6,7 @@
     <img alt="Vue logo" src="../assets/logo.png">
     <el-upload
   class="upload-demo"
-  action="https://jsonplaceholder.typicode.com/posts/"
+  action="http://localhost:3000/uploadfile"
   :on-preview="handlePreview"
   :on-remove="handleRemove"
   :on-success="handleFileSuccess"
