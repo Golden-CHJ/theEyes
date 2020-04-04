@@ -1,28 +1,15 @@
 <template>
-  <div>
-    <el-container>
-  <el-header><eye-header/></el-header>
-  <el-main>
-    <img alt="Vue logo" src="../assets/logo.png">
-    <!-- <el-upload
-  class="upload-demo"
-  action="https://jsonplaceholder.typicode.com/posts/"
-  :on-preview="handlePreview"
-  :on-remove="handleRemove"
-  :on-success="handleFileSuccess"
-  :on-error="handleFileError"
-  :on-progress="handleFileProgress"
-  :file-list="fileList"
-  :auto-upload ="autoUpload"
-  list-type="picture"
-  :accept="accept">
-  <el-button size="small" type="primary">点击上传</el-button>
-  <div slot="tip" class="el-upload__tip">只能上传jpg/png文件，且不超过500kb</div>
-</el-upload> -->
-<input type="file" @change="predict($event)">
-    </el-main>
-  <el-footer><eye-footer/></el-footer>
-</el-container>
+<div>
+  <div class="icon">
+      the EYEs
+  </div>
+  <div class="word">
+    灵魂拷问：你是什么垃圾？
+  </div>
+  <div class="wrapper">
+    <el-button type="primary" round  @change="predict($event)">
+   </el-button>
+  </div>
   </div>
 </template>
 
@@ -81,28 +68,6 @@ export default {
         alert(`预测结果：${BRAND_CLASSES[index]}`)
       }, 0)
     }
-  //   handleRemove (file, fileList) {
-  //   // console.log(file, fileList)
-  //   },
-  //   handlePreview (file) {
-  //     // console.log(file)
-  //     // console.log('HANDLEpREVIEW')
-  //   },
-  //   handleFileSuccess (response, file, fileList) {
-  //     console.log('success')
-  //     // console.log(response, file, fileList)
-  //     fun.load(file)
-  //     // this.$router.push({path: '/detail'})
-  //     alert('跳转啊')
-  //   },
-  //   handleFileError (err, file, fileList) {
-  //     console.log('err')
-  //     console.log(err, file, fileList)
-  //   },
-  //   handleFileProgress (event, file, fileList) {
-  //     // console.log('event')
-  //     // console.log(event, file, fileList)
-  //   }
   }
 
 }
@@ -111,4 +76,32 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 
+.icon{
+  background-color: #fff;
+  font-size: 1.6rem;
+   width: 8rem;
+  height: 5rem;
+  text-align: center;
+  font-weight: bold;
+  /* color: #000; */
+  position: relative;
+  top:50%;
+  margin-top: -2.5rem;
+  margin: 0 auto;
+}
+.word{
+   background-color: yellow;
+  width:12rem;
+  height: 2.5rem;
+  position: relative;
+  text-align: center;
+  font-size: 1rem;
+  top:20%;
+  margin: 0 auto;
+  font-weight: bolder;
+}
+.wrapper{
+  display: inline-block;
+  overflow: hidden;
+}
 </style>

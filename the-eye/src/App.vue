@@ -11,12 +11,14 @@ export default {
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+@import './common/font/font.css';
+*{
+  font-family: "SYYH";
+  font-size: 25px;
+  background-color: rgb(219,59,95);
+  margin: 0;
+  padding: 0;
+  height: 100%; /**全屏 */
+  width: 100%;
 }
 </style>
