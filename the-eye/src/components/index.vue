@@ -1,15 +1,24 @@
 <template>
 <div class="wrapper">
-  <div class="icon">
-      the EYEs
+  <div class="icon"
+  id="icon"
+  @before-enter="beforeEnter"
+  @enter="enter"
+  @after-enter="afterEnter">
+      The Eyes
   </div>
-  <div class="word">
+  <div class="word"
+  id='word'>
     灵魂拷问：你是什么垃圾？
   </div>
-  <el-row class="wrapper1">
+  <div class="detailWrapper">
+    <detail class="detail">
+    </detail>
+  </div>
+  <el-row class="wrapper1" id="button_wrapper">
     <input class="se2" id="f_file" type="file" name="image"  @change="predict($event)"/>
         <label for="f_file">
-            <input class="se1" type="button" value="更换头像" />
+            <input class="se1" type="button" value="识别" />
         </label>
 <!--
      <input type="file"  @change="predict($event)"/> -->
@@ -19,6 +28,8 @@
 </template>
 
 <script>
+import detail from './detail.vue'
+import Velocity from 'velocity-animate'
 import eyeHeader from './eyeHeader.vue'
 import eyeFooter from './eyeFooter.vue'
 import * as tf from '@tensorflow/tfjs'
@@ -29,7 +40,8 @@ export default {
   name: 'index',
   components: {
     eyeHeader,
-    eyeFooter
+    eyeFooter,
+    detail
   },
   data () {
     return {
@@ -60,7 +72,7 @@ export default {
       console.log(file)
       const img = await file2img(file)
       console.log(4)
-      document.body.appendChild(img)
+      // document.body.appendChild(img)
       const pred = tf.tidy(() => {
         console.log(5)
         const x = img2x(img)
@@ -72,7 +84,32 @@ export default {
       setTimeout(() => {
         alert(`预测结果：${BRAND_CLASSES[index]}`)
       }, 0)
+    },
+    beforeEnter (el) {
+      console.log(1)
+      el.style.color = 'red'
+    },
+    enter (el, done) {
+      console.log(2)
+      Velocity(el, {opacity: 0}, {duration: 1000}, {complete: done})
+    },
+    afterEnter (el) {
+      console.log(3)
+      el.style.color = 'yellow'
     }
+  },
+  mounted () {
+    const icon = document.getElementById('icon')
+    const word = document.getElementById('word')
+    const buttonWrapper = document.getElementById('button_wrapper')
+    setTimeout(function () {
+      Velocity(icon, {top: '10%', 'font-size': '0.8rem'}, {duration: 2000})
+    }, 1500)
+    setTimeout(function () {
+      Velocity(word, {opacity: 1}, {duration: 1500})
+      Velocity(buttonWrapper, {opacity: 1}, {duration: 1500})
+    }, 3500)
+    // 这里设置定时器方式页面加载未完成时动画就开始执行了
   }
 
 }
@@ -82,8 +119,9 @@ export default {
 <style scoped>
 
 .icon{
-  background-color: #fff;
-  font-size: 1.6rem;
+  /* background-color: #fff; */
+  color: white;
+  font-size: 1.2rem;
    text-align: center;
   font-weight: bold;
   /* color: #000; */
@@ -92,20 +130,23 @@ export default {
   top:50%;
 }
 .word{
-   background-color: yellow;
+  color: white;
+  opacity: 0;
+   /* background-color: yellow; */
   width:100%;
   height: 2.5rem;
   position: absolute;
   text-align: center;
   font-size: 1rem;
-  top:30%;
+  top:15%;
   margin: 0 auto;
-  font-weight: bolder;
 }
 .wrapper1{
+  opacity: 0;
   position: absolute;
   top:90%;
-  width: 40%;
+  right: 50%;
+  width: 80%;
   margin: 0 auto;
   text-align:center;
 }
@@ -113,6 +154,8 @@ export default {
     width:10rem;
     height:2rem;
     position:absolute;
+    width: 100%;
+    margin: 0 auto;
     /* top:338px;
     left:942px; */
     z-index: 1;
@@ -121,9 +164,11 @@ export default {
 .se1{
     width:10rem;
     height:2rem;
-    color:#fff;
-    background: #28abde;
-    border-radius:5px;
+    width: 100%;
+    margin: 0 auto;
+    color: rgb(219,59,95);;
+    background: #fff;
+    border-radius:20px;
     position:absolute;
     /* top:338px;
     left:942px; */

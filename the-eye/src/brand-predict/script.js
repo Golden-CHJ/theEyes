@@ -22,7 +22,7 @@ var fun = {
     console.log(file.url)
     const img = await file2img(file)
     console.log(4)
-    document.body.appendChild(img)
+    // document.body.appendChild(img)
     const pred = tf.tidy(() => {
       console.log(5)
       const x = img2x(img)
