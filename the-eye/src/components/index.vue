@@ -1,16 +1,21 @@
 <template>
-<div>
+<div class="wrapper">
   <div class="icon">
       the EYEs
   </div>
   <div class="word">
     灵魂拷问：你是什么垃圾？
   </div>
-  <div class="wrapper">
-    <el-button type="primary" round  @change="predict($event)">
-   </el-button>
-  </div>
-  </div>
+  <el-row class="wrapper1">
+    <input class="se2" id="f_file" type="file" name="image"  @change="predict($event)"/>
+        <label for="f_file">
+            <input class="se1" type="button" value="更换头像" />
+        </label>
+<!--
+     <input type="file"  @change="predict($event)"/> -->
+  </el-row>
+</div>
+
 </template>
 
 <script>
@@ -79,29 +84,51 @@ export default {
 .icon{
   background-color: #fff;
   font-size: 1.6rem;
-   width: 8rem;
-  height: 5rem;
-  text-align: center;
+   text-align: center;
   font-weight: bold;
   /* color: #000; */
-  position: relative;
+  position: absolute;
+  width: 100%;
   top:50%;
-  margin-top: -2.5rem;
-  margin: 0 auto;
 }
 .word{
    background-color: yellow;
-  width:12rem;
+  width:100%;
   height: 2.5rem;
-  position: relative;
+  position: absolute;
   text-align: center;
   font-size: 1rem;
-  top:20%;
+  top:30%;
   margin: 0 auto;
   font-weight: bolder;
 }
-.wrapper{
-  display: inline-block;
-  overflow: hidden;
+.wrapper1{
+  position: absolute;
+  top:90%;
+  width: 40%;
+  margin: 0 auto;
+  text-align:center;
+}
+.se2{
+    width:10rem;
+    height:2rem;
+    position:absolute;
+    /* top:338px;
+    left:942px; */
+    z-index: 1;
+    opacity: 0;
+}
+.se1{
+    width:10rem;
+    height:2rem;
+    color:#fff;
+    background: #28abde;
+    border-radius:5px;
+    position:absolute;
+    /* top:338px;
+    left:942px; */
+}
+.se1:hover{
+    cursor: pointer;
 }
 </style>
