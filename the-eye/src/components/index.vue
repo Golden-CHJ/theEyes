@@ -11,10 +11,11 @@
   id='word'>
     灵魂拷问：你是什么垃圾？
   </div>
-  <div class="detailWrapper">
-    <detail class="detail">
-    </detail>
-  </div>
+<div v-show='hasShow' class="detailWrapper">
+<div class="imgDiv" id="imgDiv"></div>
+<div class="classify"><strong>{{cap}}</strong>{{classify}}</div>
+<div class="detail">{{detail}}</div>
+</div>
   <el-row class="wrapper1" id="button_wrapper">
     <input class="se2" id="f_file" type="file" name="image"  @change="predict($event)"/>
         <label for="f_file">
@@ -28,7 +29,6 @@
 </template>
 
 <script>
-import detail from './detail.vue'
 import Velocity from 'velocity-animate'
 import eyeHeader from './eyeHeader.vue'
 import eyeFooter from './eyeFooter.vue'
@@ -40,23 +40,28 @@ export default {
   name: 'index',
   components: {
     eyeHeader,
-    eyeFooter,
-    detail
+    eyeFooter
   },
   data () {
     return {
+      cap: '',
+      classify: '这啥',
+      detail: '可回收垃圾好啊',
+      fileURL: '',
       fileList: [],
+      hasShow: false,
       autoUpload: true,
       accept: 'jpg' || 'JPG' || 'png' || 'PNG'
     }
   },
-
   methods: {
     async  predict (e) {
+      // const detail = document.getElementById('detailWrapper')
       const file = e.target.files[0]
-      const MODEL_PATH = 'http://127.0.0.1:8081'
+      const imgDiv = document.getElementById('imgDiv')
+      // const MODEL_PATH = 'http://127.0.0.1:8080'
       const BRAND_CLASSES = ['O', 'R']
-      const mobilenet = await tf.loadLayersModel(MODEL_PATH + '/mobilenet/web_model/model.json')
+      const mobilenet = await tf.loadLayersModel('http://localhost:8080/static/mobilenet/web_model/model.json')
       mobilenet.summary()
       const layer = mobilenet.getLayer('conv_pw_13_relu')
       const truncatedMobilenet = tf.model({
@@ -65,14 +70,16 @@ export default {
       })
 
       console.log(1)
-      const model = await tf.loadLayersModel(MODEL_PATH + '/mobilenet/web_model/model1.json')
+      const model = await tf.loadLayersModel('http://localhost:8080/static/mobilenet/web_model/model1.json')
       console.log(2)
 
       console.log(3)
       console.log(file)
       const img = await file2img(file)
       console.log(4)
-      // document.body.appendChild(img)
+      const text = imgDiv.appendChild(img)
+      text.style.width = '100%'
+      text.style.hight = '100%'
       const pred = tf.tidy(() => {
         console.log(5)
         const x = img2x(img)
@@ -84,6 +91,18 @@ export default {
       setTimeout(() => {
         alert(`预测结果：${BRAND_CLASSES[index]}`)
       }, 0)
+      let res = BRAND_CLASSES[index]
+      this.hasShow = true
+      console.log(this.hasShow)
+      if (res === 'R') {
+        this.detail = '可回收物就是可以再生循环的垃圾。本身或材质可再利用的纸类、硬纸板、玻璃、塑料、金属、塑料包装，与这些材质有关的如：报纸、杂志、广告单及其它干净的纸类等皆可回收。'
+        this.classify = 'ecyclable'
+        this.cap = 'R'
+      } else {
+        this.detail = '不可回收垃圾指可回收垃圾之外的垃圾，常见的有在自然条件下易分解的垃圾，如果皮、菜叶、剩菜剩饭、花草树枝树叶等。此外，有害的，有污染的，不能进行二次分解再造的都属于不可回收垃圾。'
+        this.classify = 'recyclable'
+        this.cap = 'UN'
+      }
     },
     beforeEnter (el) {
       console.log(1)
@@ -117,7 +136,6 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
 .icon{
   /* background-color: #fff; */
   color: white;
@@ -128,6 +146,31 @@ export default {
   position: absolute;
   width: 100%;
   top:50%;
+}
+.detailWrapper{
+  color: #fff;
+  position: absolute;
+   top: 0; left: 0; bottom: 0; right: 0;
+  /* top:30%; */
+  width: 90%;
+  height: 30% ;
+  margin:  auto;
+}
+.imgDiv{
+  float: right;;
+  height: 100%;
+  width:30%;;
+}
+.classify{
+  float: left;
+  height: 30%;
+  width: 60%;
+}
+.detail{
+  float: left;
+  height: 70%;
+  width: 60%;
+  font-size: 0.65rem;
 }
 .word{
   color: white;
