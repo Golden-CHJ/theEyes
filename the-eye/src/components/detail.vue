@@ -1,85 +1,59 @@
 <template>
   <div>
-     <el-container>
-  <el-header>
-    <a is='router-link' to='/'>
-      返回
-    </a>
-    Header
-    </el-header>
-  <el-container>
-    <el-aside width="200px">相似：{{similar}}</el-aside>
-    <el-container>
-      <el-main>
-        <div class="wrapper">
-        <img :src="pic" alt="这是你拍的垃圾" class="imgStyle"/>
-        </div>
-        </el-main>
-      <el-footer>{{classification}}</el-footer>
-    </el-container>
-
-  </el-container>
-
-  <el-container>
-      <el-main>
-        相关：{{news}}
-      </el-main>
-    </el-container>
-</el-container>
-
+<city-header></city-header>
+<city-search
+    :cities="cities"></city-search>
+<city-list
+     :cities="cities"
+     :hot="hotCities"
+     :letter="letter"></city-list>
   </div>
 </template>
 
 <script>
 import axios from 'axios'
+import cityHeader from './componts_detail/cityHeader.vue'
+import citySearch from './componts_detail/citySearch.vue'
+import cityList from './componts_detail/cityList.vue'
 export default {
   name: 'detail',
+  components: {
+    cityHeader,
+    citySearch,
+    cityList
+  },
   data () {
     return {
-      classification: ' ',
-      pic: ' ',
-      similar: [],
-      news: ''
-
+      cities: {},
+      hotCities: [],
+      letter: ''
+    }
+  },
+  methods: {
+    getCityInfo () {
+      axios.get('/static/mock/city.json').then(this.handleCityInfoSucc)
+    },
+    handleCityInfoSucc (res) {
+      res = res.data
+      console.log(res)
+      if (res.ret && res.data) {
+        const data = res.data
+        this.cities = data.cities
+        this.hotCities = data.hotCities
+        // alert(data.hotCities[0].name)
+      }
+    },
+    handleLetterChange (letter) {
+      this.letter = letter
+      // console.log(letter)
     }
   },
   mounted () {
-    axios.post('http://localhost:3000/detail').then((res) => {
-      console.log(res)
-      let data = res.data
-      this.classification = data.classification
-      this.news = data.news
-      this.pic = data.pic
-      this.similar = data.similar.join(' ')
-    })
+    this.getCityInfo()
   }
 }
 </script>
 
 <style>
-  .el-header, .el-footer {
-    background-color: #B3C0D1;
-    color: #333;
-    text-align: center;
-    line-height: 60px;
-  }
-.imgStyle{
-  width:100% ,
 
-}
-  .el-aside {
-    background-color: #D3DCE6;
-    color: #333;
-    text-align: center;
-    line-height: 3.5rem;
-    font-size: 0.8rem;
-  }
-
-  .el-main {
-    background-color: #E9EEF3;
-    color: #333;
-    text-align: center;
-    line-height: 1.5rem;
-    font-size: 0.6rem;
-  }
 </style>

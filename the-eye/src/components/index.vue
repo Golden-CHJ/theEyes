@@ -20,6 +20,9 @@
 <!-- <div class="info" v-show="isInfo">
   {{info}}
 </div> -->
+<div class="tool">
+  <router-link to='/detail'><i class="el-icon-search"></i></router-link>
+</div>
   <el-row class="wrapper1" id="button_wrapper">
     <input class="se2" id="f_file" type="file" name="image"  @change="predict($event)"/>
         <label for="f_file">
@@ -42,13 +45,15 @@ import eyeHeader from './eyeHeader.vue'
 import eyeFooter from './eyeFooter.vue'
 import * as tf from '@tensorflow/tfjs'
 import { img2x, file2img } from '../brand-predict/utils'
+import detail from './detail.vue'
 // import fun from '../brand-predict/script.js'
 
 export default {
   name: 'index',
   components: {
     eyeHeader,
-    eyeFooter
+    eyeFooter,
+    detail
   },
   data () {
     return {
@@ -192,6 +197,16 @@ export default {
   width: 90%;
   height: 30% ;
   margin:  auto;
+}
+.tool{
+  color: white;
+  font-size: 1.2rem;
+   text-align: center;
+  font-weight: bold;
+  /* color: #000; */
+  position: absolute;
+  top:3%;
+  right: 3%;
 }
 .imgDiv{
   float: right;;
