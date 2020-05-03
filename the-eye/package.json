@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "axios": "^0.19.2",
+    "better-scroll": "^1.15.2",
     "element-ui": "^2.13.0",
     "stylus": "^0.54.7",
     "stylus-loader": "^3.0.2",

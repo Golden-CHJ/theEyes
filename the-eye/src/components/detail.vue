@@ -2,11 +2,11 @@
   <div>
 <city-header></city-header>
 <city-search
-    :cities="cities"></city-search>
+    :detail="detail"></city-search>
 <city-list
-     :cities="cities"
-     :hot="hotCities"
-     :letter="letter"></city-list>
+     :detail="detail"
+     :classify="rubbish_classify"
+></city-list>
   </div>
 </template>
 
@@ -24,28 +24,23 @@ export default {
   },
   data () {
     return {
-      cities: {},
-      hotCities: [],
-      letter: ''
+      detail: {},
+      rubbish_classify: []
     }
   },
   methods: {
     getCityInfo () {
-      axios.get('/static/mock/city.json').then(this.handleCityInfoSucc)
+      axios.get('/static/mock/laji.json').then(this.handleCityInfoSucc)
     },
     handleCityInfoSucc (res) {
       res = res.data
       console.log(res)
       if (res.ret && res.data) {
         const data = res.data
-        this.cities = data.cities
-        this.hotCities = data.hotCities
+        this.detail = data.detail
+        this.rubbish_classify = data.rubbish_classify
         // alert(data.hotCities[0].name)
       }
-    },
-    handleLetterChange (letter) {
-      this.letter = letter
-      // console.log(letter)
     }
   },
   mounted () {

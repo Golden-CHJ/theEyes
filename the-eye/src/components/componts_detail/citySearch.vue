@@ -15,11 +15,11 @@
 </template>
 
 <script>
-// import Bscroll from 'better-scroll'
+import Bscroll from 'better-scroll'
 export default {
   name: 'CitySearch',
   props: {
-    cities: Object
+    detail: Object
   },
   data () {
     return {
@@ -43,8 +43,8 @@ export default {
       }
       this.timer = setTimeout(() => {
         const result = []
-        for (let i in this.cities) {
-          this.cities[i].forEach((value) => {
+        for (let i in this.detail) {
+          this.detail[i].forEach((value) => {
             if (value.spell.indexOf(this.keyWord) > -1 ||
                       value.name.indexOf(this.keyWord) > -1) {
               result.push(value)
@@ -56,12 +56,15 @@ export default {
     }
   },
   mounted () {
-    // this.scroll = new Bscroll(this.$refs.search)
+    const option = {
+      click: true,
+      tap: true
+    }
+    this.scroll = new Bscroll(this.$refs.search, option)
   },
   methods: {
     handleCityClick (city) {
-      this.$store.dispatch('changeCity', city)
-      this.$router.push('/')
+      console.log(city)
     }
   }
 }
@@ -71,15 +74,14 @@ export default {
 <style lang="stylus" scoped>
 .search
     height 1.72rem
-    padding 0 .1rem
-    background :#fff
+    padding .2rem .5rem
     .search-input
         box-sizing border-box
         width :100%
-        height :0.95rem
-        line-height :.92rem
+        height :1.1rem
+        line-height :1.1rem
         text-align center
-        border-radius 0.65rem
+        border-radius 0.8rem
         color :#666
         padding 0 .1rem
 .search-content
@@ -90,9 +92,10 @@ export default {
     left: 0
     right: 0
     bottom: 0
-    background: #eee
+    background: #fff
     .search-item
-        line-height :1.1rem
+        list-style-type none
+        line-height :1.3rem
         padding-left :.2rem
         color :#666
         background-color :#fff

@@ -18,17 +18,18 @@ export default {
 .header
     position relative
     overflow hidden
-    height :.86rem
-    line-height :.86rem
+    height :1rem
+    line-height :1rem
     text-align: center
     color :#fff
-    font-size :.32rem
+    font-size :1rem
+    top:0.2rem
     .header-back
       position absolute
       top:0
       left :0
-      width :.64rem
+      width :1.1rem
       text-align :center
-      font-size :.4rem
+      font-size :0.8rem
       color #fff
 </style>
