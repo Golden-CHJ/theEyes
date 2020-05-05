@@ -7,7 +7,7 @@
         v-show="keyWord" ref="search">
       <ul>
           <li class="search-item border-bottom" v-for="item of list" :key="item.id"
-          @click="handleCityClick(item.name)">{{item.name}}</li>
+          @click="handleRubbishClick(item.id)">{{item.name}}</li>
           <li class="search-item border-bottom" v-show="hasNoData">没有找到匹配项</li>
       </ul>
   </div>
@@ -63,8 +63,22 @@ export default {
     this.scroll = new Bscroll(this.$refs.search, option)
   },
   methods: {
-    handleCityClick (city) {
-      console.log(city)
+    handleRubbishClick (id) {
+      let _id
+      if (id > 6 && id <= 39) {
+        _id = 6
+      } else if (id > 39 && id <= 67) {
+        _id = 2
+      } else if (id > 67 && id <= 85) {
+        _id = 3
+      } else if (id > 85 && id <= 105) {
+        _id = 5
+      } else if (id > 105 && id <= 112) {
+        _id = 1
+      } else if (id > 112 && id <= 115) {
+        _id = 4
+      }
+      this.$router.push(`/rubbish/${_id}`)
     }
   }
 }

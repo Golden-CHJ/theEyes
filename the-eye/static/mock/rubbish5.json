@@ -1,12 +1,15 @@
 {
   "ret": true,
   "data": {
+    "id": 5,
     "sightName": "干垃圾",
     "bannerImg": "https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1789200246,1618592851&fm=26&gp=0.jpg",
     "gallaryImgs": ["https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1789200246,1618592851&fm=26&gp=0.jpg",
       "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1588680211605&di=e957e1dafe573f3050fe5332b1f84835&imgtype=0&src=http%3A%2F%2F5b0988e595225.cdn.sohucs.com%2Fimages%2F20181031%2Ff664650396a245df9cddc0cc464d420e.jpeg",
     "https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=2654264405,2225193874&fm=26&gp=0.jpg"],
     "categoryList": {
+      "id": 5,
+      "like":115,
         "name": "干垃圾",
         "f_name": "Residual Waste",
         "classify": "可回收物、有害垃圾、厨余垃圾",

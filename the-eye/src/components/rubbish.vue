@@ -53,6 +53,6 @@ export default {
  <style lang="stylus" scoped>
 
 .container
-    // height :50rem
+     height :50rem
     // background-color #fff
  </style>

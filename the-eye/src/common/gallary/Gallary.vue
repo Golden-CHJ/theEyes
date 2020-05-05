@@ -36,6 +36,7 @@ export default {
   },
   methods: {
     handleCilckGallaryClose () {
+      console.log('"close"')
       this.$emit('close')
     }
   }
@@ -56,6 +57,7 @@ export default {
     top 0
     bottom 0
     background :#000
+    z-index 999
     .wrapper
         width :100%
         height 0

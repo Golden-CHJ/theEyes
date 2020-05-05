@@ -17,9 +17,18 @@
     <el-card class="box-card">
   <div slot="header" class="clearfix">
     <span style="font-size: 2rem">{{list.name}}</span>
-    <el-badge  style="float: right" :value="12" class="item">
-<el-button  type="warning" icon="el-icon-star-off" circle></el-button>
-        </el-badge>
+    <el-badge   style="float: right" :value="list.like" class="item">
+     <el-popover
+    placement="top"
+    width="20"
+    trigger="click"
+    content="点赞成功">
+<el-button slot="reference" type="warning" icon="el-icon-star-off" circle @click="like(list.id)"></el-button>
+  </el-popover>
+   </el-badge>
+    <!-- <el-badge  style="float: right" :value="likeNum" class="item">
+<el-button  type="warning" icon="el-icon-star-off" circle @click="like(list.id)"></el-button>
+        </el-badge> -->
   </div>
      <div class="text item">
         外文名：<p>{{list.f_name}}</p>
@@ -45,14 +54,29 @@
 
 export default {
   name: 'DetailList',
+  data () {
+    return {
+      likeNum: 1
+    }
+  },
   props: {
     list: Object
+  },
+  mounted () {
+    this.likeNum = this.list.like
+  },
+  methods: {
+    like (id) {
+      console.log('点赞成功' + this.list.like)
+      this.list.like++ // bug
+    }
   }
 }
 </script>
  <style lang="stylus" scoped>
  .wrapper
    //  background #fff !important
+   z-index 998
 .item-title-icon
     position: relative
     left :.6rem
@@ -86,21 +110,25 @@ export default {
   }
 
   .box-card {
-    //   position absolute
-    //   top 9rem
-    //   left 0
-    //   right 0
-    //   bottom 0
-    width: 90%;
-     margin 0 auto
-     margin-top -2rem
-    z-index 999
-  }
-   .box-card1 {
-      // position absolute
+      position absolute
+      top 30%
+      left 0
+      right 0
+      bottom 0
     width: 90%;
     margin 0 auto
-    margin-top 1rem
-    z-index 999
+    // margin-top -2rem
+    // z-index 3
+  }
+   .box-card1 {
+    position absolute
+    width: 90%;
+    top 110%
+    left 0
+    right 0
+    bottom 0
+    margin 0 auto
+    height 150%
+   // z-index 3
   }
  </style>

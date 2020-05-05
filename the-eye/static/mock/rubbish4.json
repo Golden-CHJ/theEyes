@@ -1,6 +1,7 @@
 {
   "ret": true,
   "data": {
+    "id": 4,
     "sightName": "不可回收垃圾",
     "bannerImg": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1588656434388&di=e20412e67c03b82410c549e34bb3783d&imgtype=0&src=http%3A%2F%2Ff.hiphotos.baidu.com%2Fexp%2Fw%3D480%2Fsign%3Dda0ae59375c6a7efb926a92ecdfbafe9%2Fa9d3fd1f4134970a0d55506396cad1c8a7865d53.jpg",
     "gallaryImgs": ["https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1588656434388&di=e20412e67c03b82410c549e34bb3783d&imgtype=0&src=http%3A%2F%2Ff.hiphotos.baidu.com%2Fexp%2Fw%3D480%2Fsign%3Dda0ae59375c6a7efb926a92ecdfbafe9%2Fa9d3fd1f4134970a0d55506396cad1c8a7865d53.jpg",
@@ -9,6 +10,8 @@
     "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1588656595286&di=d5a26b026277253a4fb21db184ee8d49&imgtype=0&src=http%3A%2F%2Fnews.eastday.com%2Fimages%2Fthumbnailimg%2Fmonth_1906%2F45d8917b3e4e4eb28a05f89c9fafbba2.jpg",
   ""],
     "categoryList": {
+      "id": 4,
+      "like":47,
         "name": "不可回收垃圾",
         "f_name": "NON-RECOVERABLE GARBAGE",
         "classify": "厨余垃圾、干垃圾与有害垃圾均属于不可回收垃圾 ",

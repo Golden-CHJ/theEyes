@@ -1,6 +1,6 @@
 <template>
-<div>
-<div class="banner" @click="handleClickShowGallary">
+<div class="wrapper"  >
+<div class="banner" @click.prevent="handleClickShowGallary">
     <img class="banner-img" :src="bannerImg">
     <div class="banner-info">
         <!-- <div class="banner-title">{{this.sightName}}</div> -->
@@ -35,25 +35,32 @@ export default {
   methods: {
     handleClickShowGallary () {
       this.showGallary = true
+      console.log('关掉没有' + this.showGallary)
     },
     handleClickCloseGallary () {
       this.showGallary = false
+      console.log('关掉没有' + this.showGallary)
     }
   }
 }
 </script>
 
  <style lang="stylus" scoped>
-.banner
+ .wrapper
+  z-index -999
+  .banner
     position relative
-    overflow :hidden
+     overflow :hidden
     height: 0
     padding-bottom: 55%
-    z-index -1
+    z-index -999
+      height 10rem
     .banner-img
         width : 100%
+        z-index -999
     .banner-info
         position :absolute
+        top 25%
         right : 0
         left:0
         bottom: 2rem

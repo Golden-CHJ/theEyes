@@ -1,6 +1,7 @@
 {
   "ret": true,
   "data": {
+    "id": 2,
     "sightName": "可回收垃圾",
     "bannerImg": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1588655821110&di=8d731fda2b4961d4f500d5c0aed73287&imgtype=0&src=http%3A%2F%2F5b0988e595225.cdn.sohucs.com%2Fimages%2F20181115%2Fdabef2e53dd04dca904a53744c8c5bf7.jpeg",
     "gallaryImgs": ["https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=189148430,2429455350&fm=26&gp=0.jpg", 
@@ -9,6 +10,8 @@
   "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1588656215053&di=ea71ef30469d00e127ff60f770410915&imgtype=0&src=http%3A%2F%2Fcrawl.nosdn.127.net%2Febd6369cfb58200ab450cfd34cef51b4.jpg",
 "https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=113437959,3679190946&fm=26&gp=0.jpg"],
     "categoryList": {
+      "id": 2,
+      "like":77,
         "name": "可回收垃圾",
         "f_name": "RECOVERABLE GARBAGE",
         "classify": "废纸、塑料、玻璃、金属和布料 ",

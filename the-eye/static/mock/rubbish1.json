@@ -1,6 +1,7 @@
 {
   "ret": true,
   "data": {
+    "id": 1,
     "sightName": "厨余垃圾 ",
     "bannerImg": "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3052566800,3361751654&fm=26&gp=0.jpg",
     "gallaryImgs": ["https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3052566800,3361751654&fm=26&gp=0.jpg",
@@ -9,6 +10,8 @@
     "https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=1686604161,529690661&fm=26&gp=0.jpg"
   ],
     "categoryList": {
+      "id": 1,
+      "like":85,
         "name": "厨余垃圾",
         "f_name": "Kitchen Waste",
         "classify": "熟厨余垃圾和生厨余垃圾 ",

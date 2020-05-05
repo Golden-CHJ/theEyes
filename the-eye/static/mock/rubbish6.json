@@ -1,6 +1,7 @@
 {
   "ret": true,
   "data": {
+    "id": 6,
     "sightName": "湿垃圾",
     "bannerImg": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1588680517157&di=78e67ba473149202e50689011d6a555a&imgtype=0&src=http%3A%2F%2F5b0988e595225.cdn.sohucs.com%2Fq_70%2Cc_zoom%2Cw_640%2Fimages%2F20190225%2F106ed483ab2640e2aa7dab0f701c3b71.jpeg",
     "gallaryImgs": ["https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1588680517157&di=78e67ba473149202e50689011d6a555a&imgtype=0&src=http%3A%2F%2F5b0988e595225.cdn.sohucs.com%2Fq_70%2Cc_zoom%2Cw_640%2Fimages%2F20190225%2F106ed483ab2640e2aa7dab0f701c3b71.jpeg",
@@ -8,6 +9,8 @@
       "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1588680557568&di=6df5b1dc81d21e2b15accdb7e7207e31&imgtype=0&src=http%3A%2F%2F5b0988e595225.cdn.sohucs.com%2Fimages%2F20190110%2F09962e371b924a5ebe45c61a0d2a8669.jpeg",
     "https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=939325087,549238918&fm=26&gp=0.jpg"],
     "categoryList": {
+      "id": 6,
+      "like":120,
         "name": "湿垃圾",
         "f_name": "organic waste",
         "classify": "纸、纤维,易腐烂物 ",

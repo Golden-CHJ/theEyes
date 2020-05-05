@@ -1,6 +1,7 @@
 {
   "ret": true,
   "data": {
+    "id": 3,
     "sightName": "有害垃圾",
     "bannerImg": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1588674721395&di=5cbe2ecb79961ad49cd43da328deba21&imgtype=0&src=http%3A%2F%2Fimg12.cntrades.com%2F201703%2F31%2F15%2F15-00-24-39-1161178.jpg",
     "gallaryImgs": ["https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1588674721395&di=5cbe2ecb79961ad49cd43da328deba21&imgtype=0&src=http%3A%2F%2Fimg12.cntrades.com%2F201703%2F31%2F15%2F15-00-24-39-1161178.jpg",
@@ -8,6 +9,8 @@
     "https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2687776152,92776321&fm=26&gp=0.jpg",
   "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1588674835373&di=186b2d7af2d8efbf81ff1b0004a83d2a&imgtype=0&src=http%3A%2F%2F5b0988e595225.cdn.sohucs.com%2Fq_70%2Cc_zoom%2Cw_640%2Fimages%2F20181126%2Fa6299dd360e646ffa61b372fafa667a5.jpeg"],
     "categoryList": {
+      "id": 3,
+      "like":35,
         "name": "有害垃圾",
         "f_name": "Harmful Waste",
         "classify": "有害垃圾是指废电池、废灯管、废药品、废油漆及其容器等。",
