@@ -24,11 +24,7 @@ export default {
   },
   methods: {
     getDetailInfo () {
-      axios.get('/static/mock/detail.json', {
-        params: {
-          id: this.$route.params.id
-        }
-      }).then(this.handleGetDataSucc)
+      axios.get(`/static/mock/rubbish${this.$route.params.id}.json`).then(this.handleGetDataSucc)
     },
     handleGetDataSucc (res) {
       res = res.data
@@ -49,12 +45,14 @@ export default {
       sightName: '',
       bannerImg: '',
       gallaryImgs: [],
-      list: []
+      list: {}
     }
   }
 }
 </script>
  <style lang="stylus" scoped>
+
 .container
-    height :50rem
+    // height :50rem
+    // background-color #fff
  </style>

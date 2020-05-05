@@ -17,7 +17,7 @@ export default new Router({
       name: 'index'
     },
     {
-      path: '/rubbish',
+      path: '/rubbish/:id',
       component: rubbish,
       name: 'rubbish'
     }

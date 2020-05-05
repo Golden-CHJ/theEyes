@@ -1,0 +1,25 @@
+{
+  "ret": true,
+  "data": {
+    "sightName": "不可回收垃圾",
+    "bannerImg": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1588656434388&di=e20412e67c03b82410c549e34bb3783d&imgtype=0&src=http%3A%2F%2Ff.hiphotos.baidu.com%2Fexp%2Fw%3D480%2Fsign%3Dda0ae59375c6a7efb926a92ecdfbafe9%2Fa9d3fd1f4134970a0d55506396cad1c8a7865d53.jpg",
+    "gallaryImgs": ["https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1588656434388&di=e20412e67c03b82410c549e34bb3783d&imgtype=0&src=http%3A%2F%2Ff.hiphotos.baidu.com%2Fexp%2Fw%3D480%2Fsign%3Dda0ae59375c6a7efb926a92ecdfbafe9%2Fa9d3fd1f4134970a0d55506396cad1c8a7865d53.jpg",
+       "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1588656468372&di=b4e2dd895236ce6cbdf01cae8c4b9ba0&imgtype=0&src=http%3A%2F%2F5b0988e595225.cdn.sohucs.com%2Fimages%2F20181115%2Fe32638930ff84192b9e59dfae443c32c.jpeg",
+      "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1588656499157&di=f82eb10613d4727003c8503da6042b9f&imgtype=0&src=http%3A%2F%2Fimg.mp.itc.cn%2Fupload%2F20170327%2F5e14d5486fde41b8a9aa3a4e007d3b85_th.jpeg",
+    "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1588656595286&di=d5a26b026277253a4fb21db184ee8d49&imgtype=0&src=http%3A%2F%2Fnews.eastday.com%2Fimages%2Fthumbnailimg%2Fmonth_1906%2F45d8917b3e4e4eb28a05f89c9fafbba2.jpg",
+  ""],
+    "categoryList": {
+        "name": "不可回收垃圾",
+        "f_name": "NON-RECOVERABLE GARBAGE",
+        "classify": "厨余垃圾、干垃圾与有害垃圾均属于不可回收垃圾 ",
+        "defination":"不可回收垃圾指除可回收垃圾之外的垃圾，常见的有在自然条件下容易分解的垃圾，如烟头、煤渣、建筑垃圾、油漆颜料、食品残留物等废弃后没有多大利用价值的物品。 ",
+        "include":["厨余垃圾、干垃圾与有害垃圾均属于不可回收垃圾，以下介绍其基本分类。",
+        "湿垃圾，又称厨余垃圾。包括果皮、菜叶、剩菜剩饭、饭后垃圾等。湿垃圾回收后可以用来当做化肥，变废为宝。",
+        "塑料主要包括：各种塑料袋、塑料包装物和餐具、牙刷、杯子、矿泉水瓶、塑料玩具、塑料文具、塑料生活用品、洗发液瓶、洗手液瓶、洗衣液瓶、洗洁精瓶",
+        "玻璃主要包括：玻璃饮料瓶、玻璃酒瓶、坏玻璃杯、碎玻璃窗、废玻璃板、镜片、镜子等，根据回收工艺，玻璃分为无色玻璃，绿色玻璃，棕色玻璃",
+        "金属主要包括:易拉罐、金属罐头盒、装饰物、铝箔、铁片、铁钉、铁管、废铁丝、旧钢丝球、铜导线等，按照回收材料分类：铁类，非铁类(一般指有色金属)",
+        "纺织物主要包括：废弃衣服、裤子、袜子、毛巾、书包、布鞋、床单、被褥、毛绒玩具等",
+        "危害垃圾主要包括:油漆、颜料、各类清洗液等化学品，部分地区将电池和电子/电器垃圾也归于此类。"]
+      }
+  }
+}

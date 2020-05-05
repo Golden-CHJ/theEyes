@@ -5,7 +5,7 @@
     <div class="title border-topbottom">分类</div>
     <div class="button-list">
         <div class="button-wrapper" v-for="item of classify" :key="item.id"
-        @click="handleCityClick(item.name)">
+        @click="handleRubishClick(item.id)">
         <div class="button">{{item.name}}</div>
         </div>
     </div>
@@ -37,6 +37,9 @@ export default {
   methods: {
     handleCityClick (name) {
       console.log(name)
+    },
+    handleRubishClick (id) {
+      this.$router.push(`rubbish/${id}`)
     }
   },
   mounted () {

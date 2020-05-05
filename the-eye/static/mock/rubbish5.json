@@ -1,0 +1,23 @@
+{
+  "ret": true,
+  "data": {
+    "sightName": "干垃圾",
+    "bannerImg": "https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1789200246,1618592851&fm=26&gp=0.jpg",
+    "gallaryImgs": ["https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1789200246,1618592851&fm=26&gp=0.jpg",
+      "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1588680211605&di=e957e1dafe573f3050fe5332b1f84835&imgtype=0&src=http%3A%2F%2F5b0988e595225.cdn.sohucs.com%2Fimages%2F20181031%2Ff664650396a245df9cddc0cc464d420e.jpeg",
+    "https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=2654264405,2225193874&fm=26&gp=0.jpg"],
+    "categoryList": {
+        "name": "干垃圾",
+        "f_name": "Residual Waste",
+        "classify": "可回收物、有害垃圾、厨余垃圾",
+        "defination":"干垃圾是对垃圾按照可回收垃圾、厨余垃圾、有害垃圾分类后剩余下来的一种垃圾。生活垃圾的具体分类标准可根据经济社会发展水平、生活垃圾特性和处置利用需要予以调整。 ",
+        "include":["餐巾纸、卫生间用纸、尿不湿、猫砂、狗尿垫、污损纸张、烟蒂、干燥剂",
+        "污损塑料、尼龙制品、编织袋、防碎气泡膜",
+        "大骨头、硬贝壳、硬果壳（椰子壳、榴莲壳、核桃壳、玉米衣、甘蔗皮）、硬果实（榴莲核、菠萝蜜核）",
+        "毛发、灰土、炉渣、橡皮泥、太空沙、带胶制品（胶水、胶带）、花盆、毛巾",
+        "一次性餐具、镜子、竹制品（竹篮、竹筷、牙签）",
+        "纺织物主要包括：废弃衣服、裤子、袜子、毛巾、书包、布鞋、床单、被褥、毛绒玩具等成分复杂的制品（伞、笔、眼镜、打火机）",
+        "危害垃圾主要包括:油漆、颜料、各类清洗液等化学品，部分地区将电池和电子/电器垃圾也归于此类。"]
+      }
+  }
+}

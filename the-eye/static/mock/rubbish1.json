@@ -1,0 +1,22 @@
+{
+  "ret": true,
+  "data": {
+    "sightName": "厨余垃圾 ",
+    "bannerImg": "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3052566800,3361751654&fm=26&gp=0.jpg",
+    "gallaryImgs": ["https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3052566800,3361751654&fm=26&gp=0.jpg",
+       "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1588656468372&di=b4e2dd895236ce6cbdf01cae8c4b9ba0&imgtype=0&src=http%3A%2F%2F5b0988e595225.cdn.sohucs.com%2Fimages%2F20181115%2Fe32638930ff84192b9e59dfae443c32c.jpeg",
+      "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=3962819141,3633419067&fm=26&gp=0.jpg",
+    "https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=1686604161,529690661&fm=26&gp=0.jpg"
+  ],
+    "categoryList": {
+        "name": "厨余垃圾",
+        "f_name": "Kitchen Waste",
+        "classify": "熟厨余垃圾和生厨余垃圾 ",
+        "defination":"厨余垃圾是指居民日常生活及食品加工、饮食服务、单位供餐等活动中产生的垃圾。 ",
+        "include":["厨余垃圾含有极高的水分与有机物，很容易腐坏，产生恶臭。经过妥善处理和加工，可转化为新的资源，高有机物含量的特点使其经过严格处理后可作为肥料、饲料，也可产生沼气用作燃料或发电，油脂部分则可用于制备生物燃料。",
+        "包括丢弃不用的菜叶、剩菜、剩饭、果皮、蛋壳、茶渣、骨头等，其主要来源为家庭厨房、餐厅、饭店、食堂、市场及其他与食品加工有关的行业。",
+        "厨余垃圾应当提供给专业化处理单位进行处理，严禁将废弃食用油脂（包括地沟油）加工后作为食用油使用，严禁直接使用厨余垃圾饲养畜禽及鱼类，严禁用未经无害化处理的厨余垃圾生产肥料。"
+        ]
+      }
+  }
+}

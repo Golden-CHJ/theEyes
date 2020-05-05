@@ -1,0 +1,26 @@
+{
+  "ret": true,
+  "data": {
+    "sightName": "有害垃圾",
+    "bannerImg": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1588674721395&di=5cbe2ecb79961ad49cd43da328deba21&imgtype=0&src=http%3A%2F%2Fimg12.cntrades.com%2F201703%2F31%2F15%2F15-00-24-39-1161178.jpg",
+    "gallaryImgs": ["https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1588674721395&di=5cbe2ecb79961ad49cd43da328deba21&imgtype=0&src=http%3A%2F%2Fimg12.cntrades.com%2F201703%2F31%2F15%2F15-00-24-39-1161178.jpg",
+      "https://image.baidu.com/search/detail?ct=503316480&z=0&ipn=d&word=%E6%9C%89%E5%AE%B3%E5%9E%83%E5%9C%BE&step_word=&hs=2&pn=34&spn=0&di=114730&pi=0&rn=1&tn=baiduimagedetail&is=0%2C0&istype=0&ie=utf-8&oe=utf-8&in=&cl=2&lm=-1&st=undefined&cs=433732324%2C841336636&os=438524861%2C535707718&simid=4247057408%2C698036562&adpicid=0&lpn=0&ln=1545&fr=&fmq=1588664637790_R&fm=&ic=undefined&s=undefined&hd=undefined&latest=undefined&copyright=undefined&se=&sme=&tab=0&width=undefined&height=undefined&face=undefined&ist=&jit=&cg=&bdtype=0&oriquery=&objurl=http%3A%2F%2F5b0988e595225.cdn.sohucs.com%2Fimages%2F20190705%2F3f81cb839fc94b778395939440e4877f.jpeg&fromurl=ippr_z2C%24qAzdH3FAzdH3Fooo_z%26e3Bf5i7_z%26e3Bv54AzdH3FwAzdH3Fnd9lmn899_8da8mma8n&gsm=26&rpstart=0&rpnum=0&islist=&querylist=&force=undefined",
+    "https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2687776152,92776321&fm=26&gp=0.jpg",
+  "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1588674835373&di=186b2d7af2d8efbf81ff1b0004a83d2a&imgtype=0&src=http%3A%2F%2F5b0988e595225.cdn.sohucs.com%2Fq_70%2Cc_zoom%2Cw_640%2Fimages%2F20181126%2Fa6299dd360e646ffa61b372fafa667a5.jpeg"],
+    "categoryList": {
+        "name": "有害垃圾",
+        "f_name": "Harmful Waste",
+        "classify": "有害垃圾是指废电池、废灯管、废药品、废油漆及其容器等。",
+        "defination":"对人体健康或者自然环境造成直接或者潜在危害的生活废弃物。",
+        "include":["有害垃圾包括废电池、废日光灯管、废水银温度计、过期药品等，这些垃圾需要特殊安全处理。",
+        "废镍镉电池和废氧化汞电池：充电电池、镉镍电池、铅酸电池、蓄电池、纽扣电池等电池",
+        "废荧光灯管：荧光（日光）灯管、卤素灯等",
+        "废药品及其包装物：过期药物、药物胶囊、药片、药品内包装、使用过的医用纱布棉签等",
+        "废油漆和溶剂及其包装物：废油漆桶、染发剂壳、过期的指甲油、洗甲水等",
+        "废矿物油及其包装物",
+        "废含汞温度计、废含汞血压计：水银血压计、水银体温计、水银温度计",
+      "废杀虫剂及其包装：老鼠药（毒鼠强等）、杀虫喷雾罐",
+    "废胶片及废相纸：x光片等感光胶片、相片底片"]
+      }
+  }
+}

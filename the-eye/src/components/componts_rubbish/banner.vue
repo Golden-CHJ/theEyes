@@ -3,8 +3,8 @@
 <div class="banner" @click="handleClickShowGallary">
     <img class="banner-img" :src="bannerImg">
     <div class="banner-info">
-        <div class="banner-title">{{this.sightName}}</div>
-        <div class="banner-number"> <span class="iconfont">&#xe67b;</span>{{this.bannerImgs.length}}</div>
+        <!-- <div class="banner-title">{{this.sightName}}</div> -->
+        <div class="banner-number"> <span class="iconfont"><i class="el-icon-picture"></i></span>{{this.bannerImgs.length}}</div>
     </div>
 </div>
 <fade>
@@ -49,25 +49,25 @@ export default {
     overflow :hidden
     height: 0
     padding-bottom: 55%
+    z-index -1
     .banner-img
         width : 100%
     .banner-info
         position :absolute
         right : 0
         left:0
-        bottom: 0
+        bottom: 2rem
         line-height: .6rem
-        display: flex
+        // display: flex
         color #fff
-        background-image :linear-gradient(top, rgba(0,0,0,0),rgba(0,0,0,.8))
         .banner-title
-            flex :1
+            // flex :1
             font-size .32rem
             padding : 0 .2rem
         .banner-number
+            float right
             line-height .4rem
-            padding :0 .4rem
-            height: .4rem
+            padding : 0 .4rem
+            height: 1rem
             border-radius: .2rem
-            background :rgba(0,0,0,.8)
  </style>

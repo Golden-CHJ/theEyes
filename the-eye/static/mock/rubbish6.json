@@ -1,0 +1,23 @@
+{
+  "ret": true,
+  "data": {
+    "sightName": "湿垃圾",
+    "bannerImg": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1588680517157&di=78e67ba473149202e50689011d6a555a&imgtype=0&src=http%3A%2F%2F5b0988e595225.cdn.sohucs.com%2Fq_70%2Cc_zoom%2Cw_640%2Fimages%2F20190225%2F106ed483ab2640e2aa7dab0f701c3b71.jpeg",
+    "gallaryImgs": ["https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1588680517157&di=78e67ba473149202e50689011d6a555a&imgtype=0&src=http%3A%2F%2F5b0988e595225.cdn.sohucs.com%2Fq_70%2Cc_zoom%2Cw_640%2Fimages%2F20190225%2F106ed483ab2640e2aa7dab0f701c3b71.jpeg",
+       "https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=484949968,452742874&fm=26&gp=0.jpg",
+      "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1588680557568&di=6df5b1dc81d21e2b15accdb7e7207e31&imgtype=0&src=http%3A%2F%2F5b0988e595225.cdn.sohucs.com%2Fimages%2F20190110%2F09962e371b924a5ebe45c61a0d2a8669.jpeg",
+    "https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=939325087,549238918&fm=26&gp=0.jpg"],
+    "categoryList": {
+        "name": "湿垃圾",
+        "f_name": "organic waste",
+        "classify": "纸、纤维,易腐烂物 ",
+        "defination":"含有有机物成分的废弃物",
+        "include":["食材废料：谷物及其加工食品（米、米饭、面、面包、豆类）、肉蛋及其加工食品（鸡、鸭、猪、牛、羊肉、蛋、动物内脏、腊肉、午餐肉、蛋壳）、水产及其加工食品（鱼、鱼鳞、虾、虾壳、鱿鱼）、蔬菜（绿叶菜、根茎蔬菜、菌菇）、调料、酱料……",
+        "剩菜剩饭：火锅汤底（沥干后的固体废弃物）、鱼骨、碎骨、茶叶渣、咖啡渣……",
+        "过期食品：糕饼、糖果、风干食品（肉干、红枣、中药材）、粉末类食品（冲泡饮料、面粉）、宠物饲料……",
+        "瓜皮果核：水果果肉（椰子肉）、水果果皮（西瓜皮、桔子皮、苹果皮）、水果茎枝（葡萄枝）、果实（西瓜籽）……",
+        "花卉植物：家养绿植、花卉、花瓣、枝叶……",
+        "中药药渣"]
+      }
+  }
+}

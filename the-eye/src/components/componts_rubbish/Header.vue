@@ -1,6 +1,6 @@
 <template>
 <div>
-    <router-link v-show="showAbs" tag="div" to="/" class="header-abs"><div class="iconfont header-abs-back">&#xe624;</div></router-link>
+    <router-link v-show="showAbs" tag="div" to="/" class="header-abs"><div class="iconfont header-abs-back"><i class="el-icon-back"></i></div></router-link>
     <div class="header-fixed" v-show="!showAbs" :style="opacityStyle">
             <router-link to="/">
             <div class="iconfont header-fixed-back">&#xe624;</div>
@@ -48,10 +48,10 @@ export default {
     position absolute
     left: .2rem
     top: .2rem
-    width: .8rem
-    height: .8rem
-    border-radius: .4rem
-    line-height :.8rem
+    width: 1.2rem
+    height: 1.2rem
+    border-radius: 1.2rem
+    line-height :1.2rem
     background: rgba(0, 0, 0, .8)
     text-align :center
     .header-abs-back
