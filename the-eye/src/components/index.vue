@@ -5,11 +5,11 @@
   @before-enter="beforeEnter"
   @enter="enter"
   @after-enter="afterEnter">
-      The Eyes
+      手机垃圾识别分类
   </div>
   <div class="word"
   id='word'>
-    灵魂拷问：你是什么垃圾？
+    部署于浏览器的TensorFlowJS模型
   </div>
 <div v-show='hasShow' class="detailWrapper">
 <div class="imgDiv" id="imgDiv"></div>

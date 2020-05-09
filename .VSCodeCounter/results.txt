@@ -1,0 +1,165 @@
+Date : 2020-04-12 17:27:18
+Directory : c:\Users\sssss\Desktop\theEyes
+Total : 79 files,  86524 codes, 665 comments, 7887 blanks, all 95076 lines
+
+Languages
++------------+------------+------------+------------+------------+------------+
+| language   | files      | code       | comment    | blank      | total      |
++------------+------------+------------+------------+------------+------------+
+| JavaScript |         23 |     68,230 |        651 |      7,836 |     76,717 |
+| JSON       |         37 |     17,891 |          0 |          4 |     17,895 |
+| Vue        |          5 |        322 |         12 |         28 |        362 |
+| HTML       |          5 |         23 |          1 |          1 |         25 |
+| Pug        |          3 |         16 |          0 |          5 |         21 |
+| Markdown   |          1 |         14 |          0 |          8 |         22 |
+| CSS        |          2 |         13 |          0 |          2 |         15 |
+| Properties |          1 |          8 |          0 |          2 |         10 |
+| Ignore     |          1 |          4 |          0 |          1 |          5 |
+| Stylus     |          1 |          3 |          1 |          0 |          4 |
++------------+------------+------------+------------+------------+------------+
+
+Directories
++--------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                                   | files      | code       | comment    | blank      | total      |
++--------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                                      |         79 |     86,524 |        665 |      7,887 |     95,076 |
+| eyeServer                                                                                              |         30 |     38,691 |        307 |      3,896 |     42,894 |
+| eyeServer\brand-predict                                                                                |         21 |     33,815 |        266 |      3,865 |     37,946 |
+| eyeServer\brand-predict\.cache                                                                         |         15 |         15 |          0 |          0 |         15 |
+| eyeServer\brand-predict\.cache\17                                                                      |          1 |          1 |          0 |          0 |          1 |
+| eyeServer\brand-predict\.cache\1a                                                                      |          1 |          1 |          0 |          0 |          1 |
+| eyeServer\brand-predict\.cache\1d                                                                      |          1 |          1 |          0 |          0 |          1 |
+| eyeServer\brand-predict\.cache\38                                                                      |          1 |          1 |          0 |          0 |          1 |
+| eyeServer\brand-predict\.cache\41                                                                      |          1 |          1 |          0 |          0 |          1 |
+| eyeServer\brand-predict\.cache\45                                                                      |          1 |          1 |          0 |          0 |          1 |
+| eyeServer\brand-predict\.cache\4c                                                                      |          1 |          1 |          0 |          0 |          1 |
+| eyeServer\brand-predict\.cache\54                                                                      |          1 |          1 |          0 |          0 |          1 |
+| eyeServer\brand-predict\.cache\5b                                                                      |          1 |          1 |          0 |          0 |          1 |
+| eyeServer\brand-predict\.cache\87                                                                      |          1 |          1 |          0 |          0 |          1 |
+| eyeServer\brand-predict\.cache\98                                                                      |          1 |          1 |          0 |          0 |          1 |
+| eyeServer\brand-predict\.cache\a6                                                                      |          1 |          1 |          0 |          0 |          1 |
+| eyeServer\brand-predict\.cache\d9                                                                      |          1 |          1 |          0 |          0 |          1 |
+| eyeServer\brand-predict\.cache\eb                                                                      |          1 |          1 |          0 |          0 |          1 |
+| eyeServer\brand-predict\.cache\f1                                                                      |          1 |          1 |          0 |          0 |          1 |
+| eyeServer\brand-predict\dist                                                                           |          2 |     33,742 |        260 |      3,855 |     37,857 |
+| eyeServer\public                                                                                       |          1 |          7 |          0 |          2 |          9 |
+| eyeServer\public\stylesheets                                                                           |          1 |          7 |          0 |          2 |          9 |
+| eyeServer\routes                                                                                       |          2 |         29 |         20 |         11 |         60 |
+| eyeServer\views                                                                                        |          3 |         16 |          0 |          5 |         21 |
+| the-eye                                                                                                |         49 |     47,833 |        358 |      3,991 |     52,182 |
+| the-eye\build                                                                                          |          7 |        462 |         40 |         55 |        557 |
+| the-eye\config                                                                                         |          3 |         50 |         30 |         19 |         99 |
+| the-eye\src                                                                                            |         30 |     34,182 |        277 |      3,899 |     38,358 |
+| the-eye\src\assets                                                                                     |          1 |          3 |          1 |          0 |          4 |
+| the-eye\src\assets\css                                                                                 |          1 |          3 |          1 |          0 |          4 |
+| the-eye\src\brand-predict                                                                              |         21 |     33,818 |        261 |      3,864 |     37,943 |
+| the-eye\src\brand-predict\.cache                                                                       |         15 |         15 |          0 |          0 |         15 |
+| the-eye\src\brand-predict\.cache\17                                                                    |          1 |          1 |          0 |          0 |          1 |
+| the-eye\src\brand-predict\.cache\1a                                                                    |          1 |          1 |          0 |          0 |          1 |
+| the-eye\src\brand-predict\.cache\1d                                                                    |          1 |          1 |          0 |          0 |          1 |
+| the-eye\src\brand-predict\.cache\38                                                                    |          1 |          1 |          0 |          0 |          1 |
+| the-eye\src\brand-predict\.cache\41                                                                    |          1 |          1 |          0 |          0 |          1 |
+| the-eye\src\brand-predict\.cache\45                                                                    |          1 |          1 |          0 |          0 |          1 |
+| the-eye\src\brand-predict\.cache\4c                                                                    |          1 |          1 |          0 |          0 |          1 |
+| the-eye\src\brand-predict\.cache\54                                                                    |          1 |          1 |          0 |          0 |          1 |
+| the-eye\src\brand-predict\.cache\5b                                                                    |          1 |          1 |          0 |          0 |          1 |
+| the-eye\src\brand-predict\.cache\87                                                                    |          1 |          1 |          0 |          0 |          1 |
+| the-eye\src\brand-predict\.cache\98                                                                    |          1 |          1 |          0 |          0 |          1 |
+| the-eye\src\brand-predict\.cache\a6                                                                    |          1 |          1 |          0 |          0 |          1 |
+| the-eye\src\brand-predict\.cache\d9                                                                    |          1 |          1 |          0 |          0 |          1 |
+| the-eye\src\brand-predict\.cache\eb                                                                    |          1 |          1 |          0 |          0 |          1 |
+| the-eye\src\brand-predict\.cache\f1                                                                    |          1 |          1 |          0 |          0 |          1 |
+| the-eye\src\brand-predict\dist                                                                         |          2 |     33,742 |        260 |      3,855 |     37,857 |
+| the-eye\src\common                                                                                     |          1 |          6 |          0 |          0 |          6 |
+| the-eye\src\common\font                                                                                |          1 |          6 |          0 |          0 |          6 |
+| the-eye\src\components                                                                                 |          4 |        302 |         12 |         25 |        339 |
+| the-eye\src\router                                                                                     |          1 |         19 |          0 |          1 |         20 |
+| the-eye\static                                                                                         |          1 |          6 |          0 |          0 |          6 |
+| the-eye\static\mock                                                                                    |          1 |          6 |          0 |          0 |          6 |
++--------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++--------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| filename                                                                                               | language   | code       | comment    | blank      | total      |
++--------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| c:\Users\sssss\Desktop\theEyes\eyeServer\app.js                                                        | JavaScript |         40 |         21 |         11 |         72 |
+| c:\Users\sssss\Desktop\theEyes\eyeServer\brand-predict\.cache\17\ca381bf4190de45f65d3e2c2a620c0.json   | JSON       |          1 |          0 |          0 |          1 |
+| c:\Users\sssss\Desktop\theEyes\eyeServer\brand-predict\.cache\1a\fbffac8ff9e3abfd8e3b0fe7e6de05.json   | JSON       |          1 |          0 |          0 |          1 |
+| c:\Users\sssss\Desktop\theEyes\eyeServer\brand-predict\.cache\1d\b759fe4d7e423d7e41b694a90a2d9d.json   | JSON       |          1 |          0 |          0 |          1 |
+| c:\Users\sssss\Desktop\theEyes\eyeServer\brand-predict\.cache\38\36aa0d7680501a09abc8c1d20edd13.json   | JSON       |          1 |          0 |          0 |          1 |
+| c:\Users\sssss\Desktop\theEyes\eyeServer\brand-predict\.cache\41\6d178110eab04cf87de2137f43f5a6.json   | JSON       |          1 |          0 |          0 |          1 |
+| c:\Users\sssss\Desktop\theEyes\eyeServer\brand-predict\.cache\45\28c8d5b791717322c870fd1d1fa2b2.json   | JSON       |          1 |          0 |          0 |          1 |
+| c:\Users\sssss\Desktop\theEyes\eyeServer\brand-predict\.cache\4c\166e39ddd4b79c784b09610f9f2a00.json   | JSON       |          1 |          0 |          0 |          1 |
+| c:\Users\sssss\Desktop\theEyes\eyeServer\brand-predict\.cache\54\2097ce917e10b46d7bc2b8fa026d62.json   | JSON       |          1 |          0 |          0 |          1 |
+| c:\Users\sssss\Desktop\theEyes\eyeServer\brand-predict\.cache\5b\18a8bea38f25296ca0fef98137ff83.json   | JSON       |          1 |          0 |          0 |          1 |
+| c:\Users\sssss\Desktop\theEyes\eyeServer\brand-predict\.cache\87\7aefec4f2d99171bfc41ab341f9bac.json   | JSON       |          1 |          0 |          0 |          1 |
+| c:\Users\sssss\Desktop\theEyes\eyeServer\brand-predict\.cache\98\43a89b4cc536414a5d51032f48f6d9.json   | JSON       |          1 |          0 |          0 |          1 |
+| c:\Users\sssss\Desktop\theEyes\eyeServer\brand-predict\.cache\a6\3b03935736a1e0b24aed39967b1286.json   | JSON       |          1 |          0 |          0 |          1 |
+| c:\Users\sssss\Desktop\theEyes\eyeServer\brand-predict\.cache\d9\701d0f8d68845c81005417f2e32429.json   | JSON       |          1 |          0 |          0 |          1 |
+| c:\Users\sssss\Desktop\theEyes\eyeServer\brand-predict\.cache\eb\de3517b05cc72ec0da197e395483a3.json   | JSON       |          1 |          0 |          0 |          1 |
+| c:\Users\sssss\Desktop\theEyes\eyeServer\brand-predict\.cache\f1\010b0a7c28e362a646d9013e6c13f8.json   | JSON       |          1 |          0 |          0 |          1 |
+| c:\Users\sssss\Desktop\theEyes\eyeServer\brand-predict\dist\index.html                                 | HTML       |          3 |          0 |          0 |          3 |
+| c:\Users\sssss\Desktop\theEyes\eyeServer\brand-predict\dist\script.75da7f30.js                         | JavaScript |     33,739 |        260 |      3,855 |     37,854 |
+| c:\Users\sssss\Desktop\theEyes\eyeServer\brand-predict\index.html                                      | HTML       |          3 |          0 |          0 |          3 |
+| c:\Users\sssss\Desktop\theEyes\eyeServer\brand-predict\model.json                                      | JSON       |          1 |          0 |          0 |          1 |
+| c:\Users\sssss\Desktop\theEyes\eyeServer\brand-predict\script.js                                       | JavaScript |         31 |          1 |          8 |         40 |
+| c:\Users\sssss\Desktop\theEyes\eyeServer\brand-predict\utils.js                                        | JavaScript |         23 |          5 |          2 |         30 |
+| c:\Users\sssss\Desktop\theEyes\eyeServer\package-lock.json                                             | JSON       |      4,750 |          0 |          1 |      4,751 |
+| c:\Users\sssss\Desktop\theEyes\eyeServer\package.json                                                  | JSON       |         34 |          0 |          1 |         35 |
+| c:\Users\sssss\Desktop\theEyes\eyeServer\public\stylesheets\style.css                                  | CSS        |          7 |          0 |          2 |          9 |
+| c:\Users\sssss\Desktop\theEyes\eyeServer\routes\index.js                                               | JavaScript |         20 |         20 |          6 |         46 |
+| c:\Users\sssss\Desktop\theEyes\eyeServer\routes\users.js                                               | JavaScript |          9 |          0 |          5 |         14 |
+| c:\Users\sssss\Desktop\theEyes\eyeServer\views\error.pug                                               | Pug        |          5 |          0 |          2 |          7 |
+| c:\Users\sssss\Desktop\theEyes\eyeServer\views\index.pug                                               | Pug        |          4 |          0 |          2 |          6 |
+| c:\Users\sssss\Desktop\theEyes\eyeServer\views\layout.pug                                              | Pug        |          7 |          0 |          1 |          8 |
+| c:\Users\sssss\Desktop\theEyes\the-eye\.editorconfig                                                   | Properties |          8 |          0 |          2 |         10 |
+| c:\Users\sssss\Desktop\theEyes\the-eye\.eslintignore                                                   | Ignore     |          4 |          0 |          1 |          5 |
+| c:\Users\sssss\Desktop\theEyes\the-eye\.eslintrc.js                                                    | JavaScript |         20 |          8 |          2 |         30 |
+| c:\Users\sssss\Desktop\theEyes\the-eye\.postcssrc.js                                                   | JavaScript |          7 |          2 |          2 |         11 |
+| c:\Users\sssss\Desktop\theEyes\the-eye\README.md                                                       | Markdown   |         14 |          0 |          8 |         22 |
+| c:\Users\sssss\Desktop\theEyes\the-eye\build\build.js                                                  | JavaScript |         35 |          0 |          7 |         42 |
+| c:\Users\sssss\Desktop\theEyes\the-eye\build\check-versions.js                                         | JavaScript |         45 |          0 |         10 |         55 |
+| c:\Users\sssss\Desktop\theEyes\the-eye\build\utils.js                                                  | JavaScript |         80 |          5 |         17 |        102 |
+| c:\Users\sssss\Desktop\theEyes\the-eye\build\vue-loader.conf.js                                        | JavaScript |         21 |          0 |          2 |         23 |
+| c:\Users\sssss\Desktop\theEyes\the-eye\build\webpack.base.conf.js                                      | JavaScript |         85 |          4 |          4 |         93 |
+| c:\Users\sssss\Desktop\theEyes\the-eye\build\webpack.dev.conf.js                                       | JavaScript |         82 |          7 |          7 |         96 |
+| c:\Users\sssss\Desktop\theEyes\the-eye\build\webpack.prod.conf.js                                      | JavaScript |        114 |         24 |          8 |        146 |
+| c:\Users\sssss\Desktop\theEyes\the-eye\config\dev.env.js                                               | JavaScript |          6 |          0 |          2 |          8 |
+| c:\Users\sssss\Desktop\theEyes\the-eye\config\index.js                                                 | JavaScript |         40 |         30 |         16 |         86 |
+| c:\Users\sssss\Desktop\theEyes\the-eye\config\prod.env.js                                              | JavaScript |          4 |          0 |          1 |          5 |
+| c:\Users\sssss\Desktop\theEyes\the-eye\index.html                                                      | HTML       |         11 |          1 |          1 |         13 |
+| c:\Users\sssss\Desktop\theEyes\the-eye\package-lock.json                                               | JSON       |     12,991 |          0 |          1 |     12,992 |
+| c:\Users\sssss\Desktop\theEyes\the-eye\package.json                                                    | JSON       |         78 |          0 |          1 |         79 |
+| c:\Users\sssss\Desktop\theEyes\the-eye\src\App.vue                                                     | Vue        |         20 |          0 |          3 |         23 |
+| c:\Users\sssss\Desktop\theEyes\the-eye\src\assets\css\index.styl                                       | Stylus     |          3 |          1 |          0 |          4 |
+| c:\Users\sssss\Desktop\theEyes\the-eye\src\brand-predict\.cache\17\ca381bf4190de45f65d3e2c2a620c0.json | JSON       |          1 |          0 |          0 |          1 |
+| c:\Users\sssss\Desktop\theEyes\the-eye\src\brand-predict\.cache\1a\fbffac8ff9e3abfd8e3b0fe7e6de05.json | JSON       |          1 |          0 |          0 |          1 |
+| c:\Users\sssss\Desktop\theEyes\the-eye\src\brand-predict\.cache\1d\b759fe4d7e423d7e41b694a90a2d9d.json | JSON       |          1 |          0 |          0 |          1 |
+| c:\Users\sssss\Desktop\theEyes\the-eye\src\brand-predict\.cache\38\36aa0d7680501a09abc8c1d20edd13.json | JSON       |          1 |          0 |          0 |          1 |
+| c:\Users\sssss\Desktop\theEyes\the-eye\src\brand-predict\.cache\41\6d178110eab04cf87de2137f43f5a6.json | JSON       |          1 |          0 |          0 |          1 |
+| c:\Users\sssss\Desktop\theEyes\the-eye\src\brand-predict\.cache\45\28c8d5b791717322c870fd1d1fa2b2.json | JSON       |          1 |          0 |          0 |          1 |
+| c:\Users\sssss\Desktop\theEyes\the-eye\src\brand-predict\.cache\4c\166e39ddd4b79c784b09610f9f2a00.json | JSON       |          1 |          0 |          0 |          1 |
+| c:\Users\sssss\Desktop\theEyes\the-eye\src\brand-predict\.cache\54\2097ce917e10b46d7bc2b8fa026d62.json | JSON       |          1 |          0 |          0 |          1 |
+| c:\Users\sssss\Desktop\theEyes\the-eye\src\brand-predict\.cache\5b\18a8bea38f25296ca0fef98137ff83.json | JSON       |          1 |          0 |          0 |          1 |
+| c:\Users\sssss\Desktop\theEyes\the-eye\src\brand-predict\.cache\87\7aefec4f2d99171bfc41ab341f9bac.json | JSON       |          1 |          0 |          0 |          1 |
+| c:\Users\sssss\Desktop\theEyes\the-eye\src\brand-predict\.cache\98\43a89b4cc536414a5d51032f48f6d9.json | JSON       |          1 |          0 |          0 |          1 |
+| c:\Users\sssss\Desktop\theEyes\the-eye\src\brand-predict\.cache\a6\3b03935736a1e0b24aed39967b1286.json | JSON       |          1 |          0 |          0 |          1 |
+| c:\Users\sssss\Desktop\theEyes\the-eye\src\brand-predict\.cache\d9\701d0f8d68845c81005417f2e32429.json | JSON       |          1 |          0 |          0 |          1 |
+| c:\Users\sssss\Desktop\theEyes\the-eye\src\brand-predict\.cache\eb\de3517b05cc72ec0da197e395483a3.json | JSON       |          1 |          0 |          0 |          1 |
+| c:\Users\sssss\Desktop\theEyes\the-eye\src\brand-predict\.cache\f1\010b0a7c28e362a646d9013e6c13f8.json | JSON       |          1 |          0 |          0 |          1 |
+| c:\Users\sssss\Desktop\theEyes\the-eye\src\brand-predict\dist\index.html                               | HTML       |          3 |          0 |          0 |          3 |
+| c:\Users\sssss\Desktop\theEyes\the-eye\src\brand-predict\dist\script.75da7f30.js                       | JavaScript |     33,739 |        260 |      3,855 |     37,854 |
+| c:\Users\sssss\Desktop\theEyes\the-eye\src\brand-predict\index.html                                    | HTML       |          3 |          0 |          0 |          3 |
+| c:\Users\sssss\Desktop\theEyes\the-eye\src\brand-predict\model.json                                    | JSON       |          1 |          0 |          0 |          1 |
+| c:\Users\sssss\Desktop\theEyes\the-eye\src\brand-predict\script.js                                     | JavaScript |         33 |          1 |          6 |         40 |
+| c:\Users\sssss\Desktop\theEyes\the-eye\src\brand-predict\utils.js                                      | JavaScript |         24 |          0 |          3 |         27 |
+| c:\Users\sssss\Desktop\theEyes\the-eye\src\common\font\font.css                                        | CSS        |          6 |          0 |          0 |          6 |
+| c:\Users\sssss\Desktop\theEyes\the-eye\src\components\detail.vue                                       | Vue        |         77 |          0 |          9 |         86 |
+| c:\Users\sssss\Desktop\theEyes\the-eye\src\components\eyeFooter.vue                                    | Vue        |         12 |          0 |          4 |         16 |
+| c:\Users\sssss\Desktop\theEyes\the-eye\src\components\eyeHeader.vue                                    | Vue        |         10 |          0 |          4 |         14 |
+| c:\Users\sssss\Desktop\theEyes\the-eye\src\components\index.vue                                        | Vue        |        203 |         12 |          8 |        223 |
+| c:\Users\sssss\Desktop\theEyes\the-eye\src\main.js                                                     | JavaScript |         14 |          3 |          6 |         23 |
+| c:\Users\sssss\Desktop\theEyes\the-eye\src\router\index.js                                             | JavaScript |         19 |          0 |          1 |         20 |
+| c:\Users\sssss\Desktop\theEyes\the-eye\static\mock\data.json                                           | JSON       |          6 |          0 |          0 |          6 |
+| Total                                                                                                  |            |     86,524 |        665 |      7,887 |     95,076 |
++--------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
