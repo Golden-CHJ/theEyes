@@ -2,7 +2,7 @@
 import * as tf from '@tensorflow/tfjs'
 import { img2x, file2img } from './utils'
 
-const MODEL_PATH = 'http://127.0.0.1:8081'
+const MODEL_PATH = 'http://127.0.0.1:8080'
 const BRAND_CLASSES = ['O', 'R']
 
 var fun = {

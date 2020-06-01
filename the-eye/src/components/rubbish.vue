@@ -25,7 +25,11 @@ export default {
   methods: {
     getDetailInfo () {
       // axios.get(`/static/mock/rubbish${this.$route.params.id}.json`).then(this.handleGetDataSucc)
-      axios.post('http://localhost:3000/getDetail', {
+    //   axios.post('http://localhost:3000/getDetail', {
+    //     id: this.$route.params.id
+    //   }).then(this.handleGetDataSucc)
+    // },
+      axios.post('http://192.168.1.8:3000/getDetail', {
         id: this.$route.params.id
       }).then(this.handleGetDataSucc)
     },

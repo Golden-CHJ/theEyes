@@ -22,6 +22,7 @@
 </div> -->
 <div class="tool">
   <router-link to='/detail'><i class="el-icon-search"></i></router-link>
+  <router-link to='/upload'><i class="el-icon-upload2"></i></router-link>
 </div>
   <el-row class="wrapper1" id="button_wrapper">
     <input class="se2" id="f_file" type="file" name="image"  @change="predict($event)"/>
@@ -72,7 +73,6 @@ export default {
   },
   methods: {
     back () {
-      alert(1)
       this.$router.go(0)
     },
     async  predict (e) {
@@ -80,25 +80,27 @@ export default {
       this.isInfo = true
       // const detail = document.getElementById('detailWrapper')
       const file = e.target.files[0]
-      this.info = '5% 获取图片成功'
+      this.info = '获取图片成功'
       const imgDiv = document.getElementById('imgDiv')
       // const MODEL_PATH = 'http://127.0.0.1:8080'
       const BRAND_CLASSES = ['O', 'R']
-      const mobilenet = await tf.loadLayersModel('http://localhost:8080/static/mobilenet/web_model/model.json')
-      this.info = '11% 载入mobilenet模型成功'
+      const mobilenet = await tf.loadLayersModel('http://192.168.1.8:8080/static/mobilenet/web_model/model.json')
+      // const mobilenet = await tf.loadLayersModel('http://localhost:8080/static/mobilenet/web_model/model.json')
+      this.info = '载入mobilenet模型成功'
       // mobilenet.summary()
       const layer = mobilenet.getLayer('conv_pw_13_relu')
-      this.info = '13% layer：conv_pw_13_relu'
+      this.info = 'layer：conv_pw_13_relu'
       const truncatedMobilenet = tf.model({
         inputs: mobilenet.inputs,
         outputs: layer.output
       })
 
-      this.info = '17% 截断层加载成功'
-      const model = await tf.loadLayersModel('http://localhost:8080/static/mobilenet/web_model/model1.json')
-      this.info = '45% 训练模型加载成功'
+      this.info = '截断层加载成功'
+      const model = await tf.loadLayersModel('http://192.168.1.8:8080/static/mobilenet/web_model/model1.json')
+      // const model = await tf.loadLayersModel('http://localhost:8080/static/mobilenet/web_model/model1.json')
+      this.info = '训练模型加载成功'
       const img = await file2img(file)
-      this.info = '77% 图片处理成功'
+      this.info = '图片处理成功'
       while (imgDiv.hasChildNodes()) { // 当div下还存在子节点时 循环继续
         imgDiv.removeChild(imgDiv.firstChild)
       }
@@ -110,7 +112,7 @@ export default {
         const input = truncatedMobilenet.predict(x)
         return model.predict(input)
       })
-      this.info = '89% 预测功能tidy性能优化'
+      this.info = '8预测功能tidy性能优化'
       const index = pred.argMax(1).dataSync()[0]
       setTimeout(() => {
         // alert(`预测结果：${BRAND_CLASSES[index]}`)

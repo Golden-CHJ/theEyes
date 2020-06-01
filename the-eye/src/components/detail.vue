@@ -31,7 +31,9 @@ export default {
   methods: {
     getCityInfo () {
       // axios.get('/static/mock/laji.json').then(this.handleCityInfoSucc)
-      axios.get('http://localhost:3000/getRubbishes').then(this.handleCityInfoSucc)
+    //   axios.get('http://localhost:3000/getRubbishes').then(this.handleCityInfoSucc)
+    // },
+      axios.get('http://192.168.1.8:3000/getRubbishes').then(this.handleCityInfoSucc)
     },
     handleCityInfoSucc (res) { // 5.8
       res = res.data

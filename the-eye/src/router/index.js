@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import detail from '../components/detail.vue'
 import index from '../components/index.vue'
 import rubbish from '../components/rubbish.vue'
+import upload from '../components/upload.vue'
 Vue.use(Router)
 export default new Router({
   routes: [
@@ -20,6 +21,11 @@ export default new Router({
       path: '/rubbish/:id',
       component: rubbish,
       name: 'rubbish'
+    },
+    {
+      path: '/upload',
+      component: upload,
+      name: 'upload'
     }
   ]
 })

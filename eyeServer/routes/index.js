@@ -1,4 +1,5 @@
-
+const fs = require('fs')
+const path = require('path')
 const router = require('koa-router')()
 const Person = require('../dbs/model/person.js')
 const Rubbish = require('../dbs/model/rubbish.js')
@@ -91,7 +92,25 @@ router.get('/', async (ctx, next) => {
   })
 })
 
+router.post('/upload', async (ctx, next) => {
+ ctx.body ={
+   title: "¿"
+ }
+  // 上传单个文件
+  const file = ctx.request.files.file; // 获取上传文件
+  file.name = ctx.request.body.class + "_" + Math.random().toFixed(5)*100000 + ".jpg"
+  // console.log(ctx.request.body.class)
+  // 创建可读流
+  const reader = fs.createReadStream(file.path);
+  let filePath = path.join(__dirname, '../data') + `/${file.name}`;
+  // 创建可写流
+  const upStream = fs.createWriteStream(filePath);
+  // 可读流通过管道写入可写流
+  reader.pipe(upStream);
+  return ctx.body = "上传成功！";
 
+
+})
 router.post('/detail', async (ctx, next) => {
   console.log("请求文件"+ctx.request.body)
   ctx.body = {

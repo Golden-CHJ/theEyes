@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "..\\..\\eyeServer"
+		},
+		{
+			"path": "..\\..\\js-ml-code\\brand-predict"
+		},
+		{
+			"path": "..\\..\\js-ml-code\\brand"
+		}
+	],
+	"settings": {
+		"git.ignoreLimitWarning": true
+	}
+}
